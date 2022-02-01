@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Permission lis</title>
+</head>
+<body>
+{% for permission in permissions %}
+    <p>create user: {{ permission.create_user }}</p>
+    <p>see permissions: {{ permission.see_permissions }}</p>
+    <p>see users: {{ permission.see_users }}</p>
+{% endfor %}
+</body>
+</html>
